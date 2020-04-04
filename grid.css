@@ -1,0 +1,269 @@
+/* Obs: when I did the page it was locally and I actually used two css files, one for positioning the elements and another for styling and colors */
+
+/* colors */
+:root {
+  --bg-color: #EFF6E0;
+  --fg-color: #533A71;
+  --accent-a: #6184D8;
+  --accent-b: #50C5B7;
+  --accent-c: #9CEC5B;
+  --accent-d: #F0F465;
+}
+
+/* basic settings */
+
+p {
+  opacity: 88%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.25em;
+  text-align: justify;
+  text-indent: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  opacity: 20%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+h2 {
+  background: linear-gradient(to left, var(--accent-a), var(--fg-color));
+  color: var(--bg-color);
+  height: auto;
+  padding: 0.4rem;
+  font-size: 1rem;
+  text-align: center;
+  width: 34rem;
+}
+
+h3 {
+  background: linear-gradient(to left, var(--accent-d), var(--accent-c));
+  color: var(--fg-color);
+  opacity: 78%;
+  height: auto;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  width: 28em;
+  text-align: center;
+}
+
+/* start */
+#nav-link {
+  background: linear-gradient(to left, var(--accent-d), var(--accent-b));
+}
+
+#nav-link ul li,
+a {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#nav-link a,
+a:visited {
+  color: var(--fg-color);
+  opacity: 78%;
+  font-size: 0.92rem;
+  font-weight: bolder;
+  transition: ease 0.4s;
+}
+
+#nav-link a:hover {
+  color: var(--fg-color);
+  opacity: 100%;
+  transition: ease 0.4s;
+}
+
+#image {
+  border: solid 5px var(--bg-color);
+  border-top-left-radius: 999em;
+  border-top-right-radius: 999em;
+  border-bottom-left-radius: 999em;
+  box-shadow: 0 0 0 2px var(--fg-color);
+}
+
+#img-caption {
+  align-content: center;
+  display: flex;
+  justify-content: baseline;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 88%;
+  margin: 1em;
+}
+
+#tribute-invention {
+  border: double 0.4em var(--bg-color);
+
+  background: linear-gradient(to left, var(--accent-a), var(--accent-b));
+  color: var(--bg-color);
+}
+
+#tribute-invention p {
+  opacity: 100%;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+#tribute-invention h3 {
+  opacity: 100%;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  background: none;
+  color: var(--accent-d);
+}
+
+#footer-wrapper {
+  background: linear-gradient(to right, var(--fg-color), var(--accent-a));
+  color: var(--bg-color);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#tribute-sources a {
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+  color: var(--accent-d);
+}
+
+#author-links a {
+  font-weight: 500;
+  color: var(--bg-color);
+  letter-spacing: 0.2rem;
+}
+
+#social-media a {
+   font-size: 20px;
+  font-weight: bold;
+  color: var(--accent-d);
+}
+
+body {
+  font-family: monospace;
+  background: var(--bg-colo);
+  color: var(--fg-color);
+  display: flex;
+  width: auto;
+}
+
+/* positions and flex */
+#main-content {
+    display: flexbox;
+    padding: 0 2em 0 2em;
+}
+
+#nav-link {
+    align-content: center;
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+    padding: 0.4em 0 0.5em 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#nav-link ul li {
+    display: inline-flex;
+}
+
+#nav-link a {
+    margin: 0 1.4em 0 1.4em;
+}
+
+#title {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#img-div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    width: auto;
+}
+
+
+#image {
+    display: block;
+    margin: 0 auto 0.5em auto;
+    max-height: 64em;
+    max-width: 64em;
+    width: 20em;
+    z-index: 1;
+}
+
+#tribute-info,
+#additional-info {
+    align-content: center;
+    align-items: baseline;
+    justify-content: center;
+    justify-items: baseline;
+    width: auto;
+}
+
+#tribute-invention {
+    display: flexbox;
+    align-content: center;
+    align-items: baseline;
+    justify-content: center;
+    justify-items: baseline;
+    padding: 1.4em;
+
+}
+
+#tribute-invention h3 {
+    align-content: center;
+    align-items: baseline;
+    justify-content: center;
+    justify-items: baseline;
+    width: auto;
+}
+
+#footer-wrapper {
+    margin: 6em 0 -1em 0;
+    padding: 1.24em;
+}
+
+#footer-wrapper #tribute-sources {
+    display: flex;
+    align-content: flex-end;
+    list-style-type: none;
+    line-height: 2em;
+}
+
+#about-author {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+#social-media {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+#social-media a {
+    margin: 1rem;
+    line-height: 2rem;
+}
+
